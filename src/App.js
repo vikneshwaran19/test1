@@ -1,25 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Styling from './styling';
+import IncrementFunction from './inrementButton';
+import ReducerPractice from './ReducerPractice';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './RouterPractice/home';
+import { ContactPage } from './RouterPractice/contact';
+import AboutPage from './RouterPractice/about';
+import ErrorPage from './RouterPractice/Error';
+import Navigation from './Navigation';
+import NavigationBar from './RouterPractice2/NavigationBar';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+{/* <Navigation /> */}
+<NavigationBar />
+  </div>
+    );
 }
 
 export default App;
